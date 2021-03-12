@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2CG9XR5TK1"></script>
 <script>
@@ -10,96 +11,86 @@
 
   gtag('config', 'G-2CG9XR5TK1');
 </script>
-<title>Welcome</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {
-  box-sizing: border-box;
-}
+body{
+  margin:0;
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
 }
-
-/* Style the header */
-header {
-  background-color: mediumseagreen;
-  padding: 10px;
-  text-align: center;
-  font-size: 25px;
-  color: white;
+.top {
+  border-bottom: 1px solid black;
+  padding-left: 20px;
 }
-
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 15%;
-  height: 500px; /* only for demonstration, should be removed */
-  background: greenyellow;
-  padding: 20px;
+h1{
+  margin:0;
+  height:70px;
 }
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
-
-article {
-  float: left;
-  padding: 20px;
-  width: 85%;
-  background-color: #f1f1f1;
-  height: 500px; /* only for demonstration, should be removed */
+ul {
+  border-right: 1px solid black;
+  width:100px;
+  height:600px;
+  margin:0;
+  margin-left: 10px;
+  padding-top: 20px;
 }
-
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the footer */
-footer {
-  background-color: white;
-  padding: 10px;
-  text-align: center;
-  color: black;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
+input{
+float: right;
 }
 </style>
+<title>Welcome</title>
+
+
 </head>
+
 <body>
+<input type="button" value="Dark" onclick="
+var target = document.querySelector('body');
+if(this.value === 'Dark'){
+  target.style.backgroundColor ='#0A0A0A';
+  target.style.color ='white';
+  target.style.textDecoration = 'none';
+  this.value='Day';
 
-<header>
-<h1><a href="test.html">Project</h1></a>
-</header>
+  var alist = document.querySelectorAll('a');
+  var i=0;
+  while (i < alist.length) {
+    alist[i].style.color = 'white';
+  i  = i + 1;
+}
+} else {
+  target.style.backgroundColor='white';
+  target.style.color='black';
+  this.value='Dark';
 
-<section>
-  <nav>
-    <ol>
-      <li><a href="wow.html">님들<a/>
+  var alist = document.querySelectorAll('a');
+  var i=0;
+  while (i < alist.length) {
+    alist[i].style.color = 'black';
+    alist[i].style.textDecoration='none';
+  i  = i + 1;
+}
+  }
+">
+
+
+<div class="top">
+<h1 style="padding-top: 20px;""><a href="test.html">Project</h1></a>
+</div>
+<div class="grid">
+    <ul>
+      <li><a href="wow.html">님들 <a/>
       <li><a href="plan.html">계획<a/>
-    </ol>
-  </nav>
+    </ul>
 
-  <article>
-    <p>
-      hello world!</P>
-  </article>
-</section>
-
-<footer>
-</footer>
-
+<div>
+    <p style="font-size:50px">hello world!</P>
+</div>
+</div>
 </body>
 </html>
