@@ -1,6 +1,7 @@
   <!DOCTYPE html>
   <html>
   <head>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2CG9XR5TK1"></script>
 <script>
@@ -9,21 +10,107 @@
   gtag('js', new Date());
 
   gtag('config', 'G-2CG9XR5TK1');
-</script>
-  <title>Welcome</title>
-  </head>
-  <body>
 
-  <h1><a href="test.html">Project</h1></a>
+</script>
+<style>
+.manu{
+  border-bottom: 1px solid black;
+  padding-left: 20px;
+}
+.manu a{
+  color:black;
+    text-decoration: none;
+  }
+body{
+  margin:0;
+}
+h1{
+  margin:0;
+  height:70px;
+}
+
+.grid a {color:black;
+  text-decoration: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 180px 2fr;
+}
+
+ul {
+  border-right: 1px solid black;
+  width:100px;
+  height:600px;
+  margin:0;
+  margin-left: 10px;
+  padding-top: 20px;
+}
+input{
+float: right;
+}
+</style>
+
+  <title>plan</title>
+
+  </head>
+
+  <body>
+    <!-- 다크 모드 -->
+  <input type="button" value="Dark" onclick="
+  var target = document.querySelector('body');
+  if(this.value === 'Dark'){
+    target.style.backgroundColor ='#0A0A0A';
+    target.style.color ='white';
+    target.style.textDecoration = 'none';
+    this.value='Day';
+
+    var alist = document.querySelectorAll('a');
+    var i=0;
+    while (i < alist.length) {
+      alist[i].style.color = 'white';
+    i  = i + 1;
+  }
+  } else {
+    target.style.backgroundColor='white';
+    target.style.color='black';
+    this.value='Dark';
+
+    var alist = document.querySelectorAll('a');
+    var i=0;
+    while (i < alist.length) {
+      alist[i].style.color = 'black';
+      alist[i].style.textDecoration='none';
+    i  = i + 1;
+  }
+    }
+  ">
+
+  <!-- 메뉴 -->
+  <div class="manu">
+  <h1 style="padding-top: 20px;"><a href="test.html">Project</a></h1>
+  </div>
+
+  <!-- 메뉴2 -->
+  <div class="grid">
+      <ul>
+        <li><a href="wow.html">님들</a>
+        <li><a href="plan.html">계획</a>
+      </ul>
+
+      <!-- 본문 -->
+    <div>
   <h2>계획</h2>
-    <ol>
-      <li><a href="1.html">코딩 강의 청취</a>
+
+  <ol>
+      <li><a href="1.html">코딩 공부</a>
       <li><a href="2.html">개인 홈페이지 제작</a>
       <li><a href="3.html">비트코인 관련 프로그램 제작</a>
       <li><a href="4.html">pc 게임 제작</a>
       <li><a href="5.html">안드로이드 어플 제작</a>
   </ol>
 
-
+</div>
+</div>
   </body>
   </html>

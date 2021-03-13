@@ -14,23 +14,33 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 <meta charset="utf-8">
-<style>
-body{
-  margin:0;
 
-}
-.top {
+<style>
+.manu{
   border-bottom: 1px solid black;
   padding-left: 20px;
+}
+.manu a{
+  color:black;
+    text-decoration: none;
+  }
+body{
+  margin:0;
 }
 h1{
   margin:0;
   height:70px;
 }
+
+.grid a {color:black;
+  text-decoration: none;
+}
+
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 180px 2fr;
 }
+
 ul {
   border-right: 1px solid black;
   width:100px;
@@ -43,12 +53,13 @@ input{
 float: right;
 }
 </style>
-<title>Welcome</title>
 
+<title>Welcome</title>
 
 </head>
 
 <body>
+  <!-- 다크 모드 -->
 <input type="button" value="Dark" onclick="
 var target = document.querySelector('body');
 if(this.value === 'Dark'){
@@ -77,20 +88,25 @@ if(this.value === 'Dark'){
 }
   }
 ">
+</input>
 
-
-<div class="top">
-<h1 style="padding-top: 20px;""><a href="test.html">Project</h1></a>
+<!-- 메뉴 -->
+<div class="manu">
+<h1 style="padding-top: 20px;"><a href="test.html">Project</a></h1>
 </div>
+
+<!-- 메뉴2 -->
 <div class="grid">
     <ul>
-      <li><a href="wow.html">님들 <a/>
-      <li><a href="plan.html">계획<a/>
+      <li><a href="wow.html">님들</a>
+      <li><a href="plan.html">계획</a>
     </ul>
 
+<!-- 본문 -->
 <div>
     <p style="font-size:50px">hello world!</P>
 </div>
 </div>
+
 </body>
 </html>
