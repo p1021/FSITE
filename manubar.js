@@ -1,5 +1,5 @@
 function myFunction() {
-  document.getElementById("mainbar").style =
+  document.getElementById("manubar").style =
 ul {
   list-style-type: none;
   margin: 0;
